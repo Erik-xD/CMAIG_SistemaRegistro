@@ -1,5 +1,0 @@
-Mi primer archivo git
-
-[agrego esto para ver los cambios]
-
-agrego un tercer cambio para ver las diferencias
