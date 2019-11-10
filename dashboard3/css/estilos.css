@@ -1,0 +1,36 @@
+.nav{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	min-height: 110px;
+	height: auto;
+}
+
+.nav div div a{
+	text-decoration: none;
+	list-style: none;
+	color:black;
+}
+
+
+#menu ul li{
+	height: 40px;
+
+}
+#menu ul li:hover, #menu a:hover{
+/*	background-color:#CCD1D1 ;
+	color:black;*/
+
+}
+
+#colapse div nav form li{
+	list-style: none;
+	color:gray;
+}
+#colapse div nav form li a{
+	color:gray;
+}
+#footer{
+	background-color: #262525;
+	min-height: 250px;
+}
