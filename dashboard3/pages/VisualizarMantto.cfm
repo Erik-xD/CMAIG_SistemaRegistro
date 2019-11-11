@@ -32,8 +32,6 @@
 	</cfquery>
 
 	<cfquery name="dispositivo" datasource="oracle12c">
-		-- SELECT*FROM empleado, dispositivo WHERE de_id= 
-		-- empleado.em_area,empleado.em_nombre, dispositivo.di_nombre,dispositivo.di_modelo,dispositivo.di_marca
 		select *
 		from empleado, dispositivo 
 		where dispositivo.em_id= empleado.em_id and empleado.de_id='#Session.de_id#' 

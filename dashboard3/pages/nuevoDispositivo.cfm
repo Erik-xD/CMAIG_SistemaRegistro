@@ -1,11 +1,19 @@
-<CFQUERY name="empleado" DATASOURCE="oracle12c" >
 
-	SELECT*FROM empleado WHERE de_id= '#Session.de_id#' order by em_area 
 
-</CFQUERY>
+
 
 <div class="container-fluid" >
+<cftry>
 
+		<CFQUERY name="empleado" DATASOURCE="oracle12c" >
+			SELECT*FROM empleado WHERE de_id= '#Session.de_id#' order by em_area 
+		</CFQUERY>
+
+	<cfcatch type="any">
+		<strong><p>Ha ocurrido un error en el servidor, estamos trabajando para resolverlo</p></strong>
+		<script>alert('Ha ocurrido un error');</script>
+	</cfcatch>
+</cftry>
 					<div class="row justify-content-md-center">
 						<div class="col-sm-12 text-center">
 							<h3>Nuevo Dispositivo</h3>	
@@ -22,11 +30,29 @@
 
 											 <div class="form-group col-md-6">
 									  			<label for="inputPassword4">Seleccione un empleado</label>
+
+
+
 								                <select name="em_id" class="custom-select" required >
+
+								                <cftry>
 								                	<cfoutput query="empleado">
 								                		<option value="#empleado.em_id#">#empleado.em_area# - #empleado.em_nombre#</option>
 								                	</cfoutput>
+								                	<cfcatch type="any">
+								                		<option value="">Ninguno</option>
+								                	</cfcatch>
+								                </cftry>
+
+
+
+
 										      	</select>
+
+
+
+
+
 										    </div>
 											 <div class="form-group col-md-6">
 											 	<label for="inputPassword4">Seleccione el tipo de dispositivo</label>
