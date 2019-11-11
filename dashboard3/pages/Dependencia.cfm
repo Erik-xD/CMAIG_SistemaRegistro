@@ -87,23 +87,23 @@
 							 </div>
 					    	<div class="form-group col-md-6">
 						    	 <label for="inputPassword4">Tel. dependencia</label>
-							     <input type="number" class="form-control" name="de_tel"  placeholder="#dependencia.de_director#" required>
+							     <input type="number" class="form-control" name="de_tel"  placeholder="#dependencia.de_tel#" required>
 							</div>
 						    <div class="form-group col-md-6">
 						    	<label for="inputEmail4">Dirección</label>
-							     <input type="text" class="form-control" name="de_dir"  placeholder="#dependencia.de_director#" required>
+							     <input type="text" class="form-control" name="de_dir"  placeholder="#dependencia.de_direccion#" required>
 							 </div>
 							 <div class="form-group col-md-6">
 							    <label for="inputPassword4">Código Postal</label>
-							    <input type="text" class="form-control" name="de_cp"  placeholder="#dependencia.de_director#" required>
+							    <input type="text" class="form-control" name="de_cp"  placeholder="#dependencia.de_cp#" required>
 							</div>
 							<div class="form-group col-md-6">
 							    <label for="inputEmail4">Nombre de la Dependencia</label>
-							   <input type="text" class="form-control" name="de_name"  placeholder="#dependencia.de_director#" required>
+							   <input type="text" class="form-control" name="de_name"  placeholder="#dependencia.de_nombre#" required>
 							</div>
 							<div class="form-group col-md-6">
 							    <label for="inputPassword4">Correo Electrónico</label>
-							   <input type="text" class="form-control" name="DE_correo"  placeholder="#dependencia.de_director#" required>
+							   <input type="text" class="form-control" name="DE_correo"  placeholder="#dependencia.de_correo#" required>
 							</div>
 						</cfoutput>
 						</div>
